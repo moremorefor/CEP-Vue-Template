@@ -1,0 +1,53 @@
+{
+  "name": "cep-vue-template",
+  "version": "0.0.1",
+  "description": "CEP-Vue-Template",
+  "author": "moremorefor",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn setup && gulp",
+    "setup": "node ./setup/setup.js"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-pattern-matching": "^1.4.5",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+    "babel-plugin-transform-es2015-block-scoping": "^6.26.0",
+    "babel-plugin-transform-strict-mode": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-vue": "^2.0.0",
+    "browser-sync": "^2.11.0",
+    "coffeescript": "^2.1.1",
+    "css-loader": "^0.28.9",
+    "del": "^3.0.0",
+    "eslint": "^4.16.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue": "^4.2.2",
+    "gulp": "^3.9.1",
+    "gulp-coffee": "^3.0.2",
+    "gulp-filter": "^5.1.0",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-sass": "^3.1.0",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^2.2.1",
+    "vue-loader": "^13.7.0",
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^3.10.0",
+    "webpack-stream": "^4.0.0"
+  },
+  "dependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "sass-loader": "^6.0.7",
+    "transform-runtime": "^0.0.0",
+    "vue": "^2.5.13",
+    "vuex": "^3.0.1"
+  }
+}

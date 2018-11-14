@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    "pattern-matching",
+    "transform-async-to-generator",
+    "transform-es2015-arrow-functions",
+    "transform-object-rest-spread",
+    [
+      "transform-runtime",
+      {
+        "polyfill": false,
+        "regenerator": true
+      }
+    ]
+  ],
+  "presets": ["env", "vue"]
+}
