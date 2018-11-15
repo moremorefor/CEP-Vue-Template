@@ -16,13 +16,16 @@ class CEPUtils {
   getApplicationName () {
     const appID = this._csInterface.getApplicationID()
     console.log('Application: ', appID)
-    let x
-    let appName = 'PHXS' | 'Photoshop'
-    appName = 'PHSP' | 'Photoshop'
-    appName = 'ILST' | 'Illustrator'
-    appName = x | 'Other'
-
-    return appName(appID)
+    switch (appID) {
+      case 'PHXS':
+        return 'Photoshop'
+      case 'PHSP':
+        return 'Photoshop'
+      case 'ILST':
+        return 'Illustrator'
+      default:
+        return 'Other'
+    }
   }
 }
 

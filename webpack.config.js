@@ -1,6 +1,8 @@
 const path = require('path')
+const { VueLoaderPlugin } = require('vue-loader')
 
 module.exports = {
+  mode: 'development',
   entry: './src/js/main.js',
   output: {
     path: path.join(__dirname, '/public/js'),
@@ -15,23 +17,41 @@ module.exports = {
     }
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['vue', 'env']
-        }
+        loader: 'babel-loader'
+      },
+      {
+        test: /\.css$/,
+        use: ['vue-style-loader', 'css-loader']
+      },
+      {
+        test: /\.scss$/,
+        use: ['vue-style-loader', 'css-loader', 'sass-loader']
+      },
+      {
+        test: /\.sass$/,
+        use: ['vue-style-loader', 'css-loader', 'sass-loader?indentedSyntax']
       },
       {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
-          // `vue-loader` option
+          loaders: {
+            scss: ['vue-style-loader', 'css-loader', 'sass-loader'],
+            sass: [
+              'vue-style-loader',
+              'css-loader',
+              'sass-loader?indentedSyntax'
+            ]
+          }
+          // other vue-loader options go here
         }
       }
     ]
   },
-  devtool: 'source-map'
+  devtool: 'source-map',
+  plugins: [new VueLoaderPlugin()]
 }

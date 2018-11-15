@@ -68,4 +68,4 @@ JSXInterface.prototype.registerInclude = function (filepath) {
   this.csInterface.evalScript('$.evalFile("' + filePath + '")')
 }
 
-module.exports = JSXInterface
+export default JSXInterface

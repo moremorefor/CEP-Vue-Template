@@ -4,8 +4,8 @@ import App from './App'
 import Vue from 'vue'
 import store from './store'
 import configManager from './configManager'
+import JSXInterface from './jsxinterface'
 
-const JSXInterface = require('./jsxinterface')
 const jsxInterface = JSXInterface.getInstance()
 const csInterface = new CSInterface()
 var fs = require('fs')
