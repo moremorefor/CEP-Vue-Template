@@ -4,18 +4,30 @@ CEP Extention with Vue.js template.
 
 ## Support Application
 
-* Photoshop
+- Photoshop
 
 #### CEP version
 
-* CEP 6.1
+- CEP 6.1
 
 #### Tested environment
 
-* macOS Sierra
-* Photoshop CC2018
+- macOS Sierra
+- Photoshop CC2018
 
-## Build
+## Setup for debug (macOS)
+
+1.  Edit plist file: `<user>/Library/Preferences/com.adobe.CSXS.8.plist`
+
+        Set string value for the key PlayerDebugMode to 1
+
+1.  Force-reloading property list files (macOS 10.9 and higher)
+
+        $ sudo killall cfprefsd
+
+1.  Restart your macOS
+
+## Build (macOS only)
 
 1.  Install packages.
 
@@ -23,7 +35,7 @@ CEP Extention with Vue.js template.
 
 2.  Edit `setup/config.json`.
 
-    * "userName" is home directory name
+    - "userName" is home directory name
 
 3.  Build & Run
 
@@ -37,7 +49,7 @@ CEP Extention with Vue.js template.
 
 1.  Download ZXPSignCmd
 
-    * [Adobe Labs](https://labs.adobe.com/downloads/extensionbuilder3.html)
+    - [Adobe Labs](https://labs.adobe.com/downloads/extensionbuilder3.html)
 
 2.  Create p12 file
 
