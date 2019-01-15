@@ -1,7 +1,7 @@
 <template lang="html">
   <div>
 
-    <h4 class="headline">Brush</h4>
+    <h4 class="headline">Title</h4>
 
     <div class="wrapper">
       <button @click='helloAlert' class='topcoat-button--cta'>HelloWorld</button>
