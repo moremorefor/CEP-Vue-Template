@@ -1,3 +1,4 @@
+import fs from 'fs-extra'
 import JSXInterface from './jsxinterface'
 import cepUtils from './cepUtils'
 const jsxInterface = JSXInterface.getInstance()
@@ -5,9 +6,17 @@ const jsxInterface = JSXInterface.getInstance()
 class ConfigManager {
   constructor () {
     console.log('cepUtils.getRootPath(): ', cepUtils.getRootPath())
+    console.log('cepUtils.getDataPath(): ', cepUtils.getDataPath())
     console.log('cepUtils.getAppName(): ', cepUtils.getAppName())
+    this._dataPath = cepUtils.getDataPath()
+    this.createDataDirectory(this._dataPath)
+
     this._filePath =
-      cepUtils.getRootPath() + '/' + cepUtils.getAppName() + '.json'
+      cepUtils.getDataPath() + '/' + cepUtils.getAppName() + '.json'
+  }
+
+  createDataDirectory (dataPath) {
+    fs.mkdirsSync(dataPath)
   }
 
   filePath () {
