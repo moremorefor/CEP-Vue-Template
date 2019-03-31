@@ -36,7 +36,6 @@ export default {
 
 <style lang='sass' scoped>
 .headline
-  color: #ccc
   font-size: 0.8em
   text-align: left
   margin-bottom: 0.8em

@@ -55,7 +55,6 @@ export default {
       margin: 0 1em 0.7em 0
       font-weight: bold
   .headline
-    color: #ccc
     font-size: 0.8em
     text-align: left
     margin-bottom: 0.8em

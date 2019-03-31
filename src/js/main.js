@@ -10,6 +10,9 @@ const jsxInterface = JSXInterface.getInstance()
 const csInterface = new CSInterface()
 var fs = require('fs')
 
+isNodeJSEnabled()
+init()
+
 function isNodeJSEnabled () {
   console.log('Node.js')
   if (typeof require !== 'undefined') {
@@ -24,9 +27,6 @@ function isNodeJSEnabled () {
     alert('Node.js is disabled')
   }
 }
-
-isNodeJSEnabled()
-init()
 
 async function init () {
   themeManager.init()
