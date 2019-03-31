@@ -31,6 +31,14 @@ function isNodeJSEnabled () {
 async function init () {
   themeManager.init()
 
+  // Sample Events
+  csInterface.addEventListener('documentAfterActivate', () => {
+    console.log('CEP Application Events: documentAfterActivate')
+  })
+  csInterface.addEventListener('documentAfterDeactivate', () => {
+    console.log('CEP Application Events: documentAfterDeactivate')
+  })
+
   jsxInterface.registerInclude('/js/libs/json2.js')
   jsxInterface.registerInclude('/js/libs/polyfill.js')
   jsxInterface.registerInclude('/jsx/hostscript.jsx')
