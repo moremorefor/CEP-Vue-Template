@@ -12,7 +12,7 @@ CEP Extention with Vue.js template.
 
 #### Tested environment
 
-- macOS Sierra
+- macOS Sierra / Windows 10
 - Photoshop CC2018
 
 ## Setup for debug (macOS)
